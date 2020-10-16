@@ -40,10 +40,14 @@ namespace BalancedBracketsNS
                     brackets--;
                     countCloseBracket++;
                 }
-                if (countCloseBracket > countOpenBracket)
+                if (brackets < 0)
                 {
                     return false;
                 }
+                //if (countCloseBracket > countOpenBracket)
+                //{
+                //    return false;
+                //}
             }
             return brackets == 0;
         }

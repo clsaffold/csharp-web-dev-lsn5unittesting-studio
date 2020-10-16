@@ -56,5 +56,12 @@ namespace BalancedBracketsTests
             Boolean result = BalancedBrackets.HasBalancedBrackets(input);
             Assert.AreEqual(result, false);
         }
+        [TestMethod]
+        public void WrongClosedNestedBracketReturnsFalse()
+        {
+            String input = "[]][";
+            Boolean result = BalancedBrackets.HasBalancedBrackets(input);
+            Assert.AreEqual(result, false);
+        }
     }
 }
